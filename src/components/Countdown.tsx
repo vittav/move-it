@@ -16,8 +16,13 @@ export function Countdown() {
         setActive(true);
     }
 
+    // useEffect(() => {
+        // O que vou executar
+    // }, [Quando vou executar (neste caso quando o valor de active mudar e a cada mudança no valor de time)])
     useEffect(() => {
+        // Se o countdown está ativo e ainda não chegou a zero:
         if (active && time > 0) {
+            // quero que depois de 1000 milisegundos o time seja reduzido em 1s
             setTimeout(() => {
                 setTime(time - 1);
             }, 1000)
