@@ -13,7 +13,7 @@ import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 
-export default function Home(props: HomeProps) {
+export default function Home(props) {
   return (
     <ChallengesProvider 
       level={props.level}
